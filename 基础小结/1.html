@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.log(Infinity*3===Infinity)
+/*
+        基础已经学完了;都学了什么??
+        它俩的区别:
+        continue:当i等于当前值的时候,跳过;再执行余下的循环;
+        break:当i等于当前值的时候,挑出for循环结束;
+
+        infinity
+        无穷数
+        infinity 正无穷大
+        -infinity负无穷大
+        数字类型;  Infinity*3===Infinity  true;
+
+        对象只认 {} []
+        arr = []  /  obj = {}
+        只有对象下才能加属性和方法;null对象不可以;  非空对象;
+        属性就是前面有主; obj.a / box.style
+        方法就是前面有主,主就是谁;
+
+        元素本身就有事件;如果没有事件函数;那么为null;
+        对象如果没有的属性  => undefined;
+        把一个函数赋值给一个点击事件;
+        只要有函数就是一个域,会先找域中的变量;如果找不到还会去它的父级找;如果再找不到;就报错;(is not 声明)
+       
+        JS  ECMAscript + DOM + BOM
+        ECMAscript  规定了语法;
+        
+        数据类型
+        Number  数字 
+        String  字符串    '' / " "  页面中所有内容都是字符串;
+        Null    空   页面中没有这个元素就是 null
+        Boolean 布尔值   false / true;
+        undefined  未定义
+        symbol   唯一;
+
+        符合数据类型
+        obj   可以存放任何数据   主要用来存放数据;
+        []    它俩都是存放数据用的;;;;
+
+        预解析
+        在预解析的时候,var上面会出现undefined;
+        一个变量声明了没有赋值undefined
+        数组中没有这个值 undefined
+        对象中没有这个属性 undefined
+        函数的默认返回值 undefined
+        简单类型身上没有这个属性 undefined???
+
+        查看数据类型
+        typeof 
+        typeof检查出来的数据类型与官方有出入;
+        typeof没有null,多了一个function(){}
+        typeof检测出来的都是字符串,并且小写;
+
+        为什么要有数据类型?
+        在数据运算的时候,因为数据类型不同,运算结果也不同;
+
+        数据类型转换;
+        强制类型转化   人为转换;
+        隐式类型转化   非人为(系统偷偷的转换)
+
+    字符串转数字::    强制类型转换  
+        字符串转数字 Number('20')   20
+        转空字符串  =>  0;
+        而parstInt 转 空字符串  => NaN
+        Number('20px')  =>  NaN
+        ***NaN 是number类型;
+        NaN 是非法数学运算;
+        parseInt  取整;  被操作的字符串;必须数字开头;  不然NaN
+        parseInt('20px')  =>  20
+        如果开头为0;会舍弃0;开头为空格;会舍弃空格;
+        parseInt('00000020px')  =>  20
+        parseInt('    20px')  =>  20
+        如果开头是数字中间不是数字;会把开头的数字取出来;
+        parseInt(字符串,第一个参数的进制数)
+        ????
+        parseFloat()  也是操作字符串;
+        相比parseInt可以转小数;不过没有第二个参数;
+
+        NaN  非法的数字运算
+        除了NaN所有的数据都等于自己;
+        检测是不是NaN  isNaN    喜欢NaN,讨厌数字;   是数字返回false;  不是数字返回true;
+        例子:  isNaN('')  => false;
+
+        隐式类型转换
+        运算符都会隐式类型转换
+        如果字符串数字  '123456'  纯的;
+        字符串 + 任何数据类型都是字符串拼接;
+        数字 + 数字  等于数字;
+
+        把一个字符串转为数字的方法?  
+        str
+        Number(str)
+        parseInt(str)
+        parseFloat(str)
+        +str
+        *str
+        
+        运算符
+        =  +=  -=  *=  /=  %=
+        =  赋值
+        
+        关系运算符
+        <  >  ==  <=  >=  ===  !== , 
+        == 不用关心数据类型是否一样;直接比较;
+        === 先比较数据类型;如果不同直接false;
+        !  取反;  返回值  布尔值;
+        空字符串  =>  fasle;
+        小技巧
+        if(val == '')  和  if(!val)一样;  取反就是val不存在;为空;
+        !!str   第一次取反=> false  在取反就是true;
+        !=  不等
+        !==  不全等  '2'!==2  true;  先比较数字字符串不等于Number  
+
+        逻辑运算符
+
+
+
+
+
+
+
+
+
+
+
+*/ 
+</script>
