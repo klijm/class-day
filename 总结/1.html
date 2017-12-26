@@ -93,14 +93,93 @@
         在document  之上是  unll   嘿嘿嘿嘿嘿;
 
         
+        它这个例子挺有趣的;
 
 
 
 
 
+12.25
 
 
-        老师这个例子挺有趣的;
+        console.log( box.attributes[2] ) //  得到这个元素的 =>> 第1个属性?
+        //  得到,第一个属性,或者说第二个属性;  自定义的也可以得到;
+
+
+
+
+        第一个节点和最后一个节点;
+            lastElementChild   最后一个节点
+            firstElementChild  第一个节点
+
+        兄弟节点;
+        previousElementSibling  上个兄弟节点;
+            例子:最后一个节点;存起来;   然后在  在找上个兄弟节点;  就是这个节点的上一个兄弟;
+            这个例子有意思;
+        
+        nextElementSibling   下个兄弟节点;
+            还是例子:  先找到第一个节点;  然后找到这个节点的下个节点;  也就是兄弟关系;;这个元素的下个;
+
+
+
+        ************-----------这个例子;  首先找到大元素;在这个大元素下的子级元素;  然后分清它们之间的关系;
+
+
+
+        
+
+        属性操作  DOM
+            box.id
+            box['id']
+
+        问:  box.index   ???是什么?  ==>>>>>>   undefined  元素本身就是一个属性;
+        如果我要  弹出alert(1) ??? 怎么办???  在JS中  设置一下 它的值;   
+
+        为什么?
+            JS中设置的存在内存中;   行间的是系统自带的;   完全不一样;
+
+        但是学了DOM;   可以通过节点;直接获取到行间设置的,自定义属性和属性值;   没问题;
+        牛不牛逼???
+        DOM  还是 挺不错的;
+
+
+        dataset   给行间添加属性的方式;
+
+        box.dataset.index = 1;   添加
+        box.dataset.index = '';  删除(只添加一个属性名;没有值;)
+
+        可以混合用;
+        box.removeAttribute('data-index')    彻底删除;
+
+
+        DOM的增删改查
+        创建元素:
+            document.createElement('li')  ***意思是在document文档下创建一个元素;
+        末尾追加元素:
+            parent.appendChild(li);  把创建的这个元素  放在哪个位置???;  剪切::::
+        开头添加元素:
+            parent.inserBefore(添加谁,在谁前面添加?)   *在parent中 ==>> 添加谁?在谁的前面添加?;
+        删除:
+            parent.removeChild(删除的那个)   ****要删除的哪个?就删除那个!
+            remove(index)  (this);
+        替换:***************有点重点   下面;
+
+
+DOM 操作都是剪切;不是复制;剪切  剪切  剪切  剪切  剪切  剪切
+    动态数组
+        TagName
+        children
+        className
+    静态数组
+        query
+    
+
+
+*****DOM操作是剪切;
+    替换:
+        先创建一个元素,你要放在哪个元素中;   ok啦
+    克隆:
+        cloneNode(),
 
 
 
