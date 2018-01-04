@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+<script>
+/*
+    JS几个难点;
+        生数据,  一般都是从数组中拿取;
+        使用for循环么?
+
+    这个数据生成试一下;
+
+*/
+
+    let arr = [1,'呵呵','试一试',
+    {
+        obj:'哒哒',
+        name:'lili',
+        job:'看戏',
+        sex:88
+    },
+    33
+    ]
+
+    //  生成数据;
+
+    box.innerHTML = arr[0];  
+    box.innerHTML = arr[1]  // 这个只是数据;  (也就是页面的内容;)    既然是内容;就用元素包一下呗?
+
+    box.innerHTML = box.innerHTML  //  复制  的简单东西;
+    
+    box.innerHTML = `<span style="background:red;">${arr[2]}</span>`
+
+    box.innerHTML += arr[3].obj;  //  首先是arr的下标;数组的下标;  然后是对应那个下标的数据(对象);
+    // 对象中的谁?   要么用=>>属性名取值;  要么循环这个这个对象;取值;  循环对向取值已经会了;
+
+    box.innerHTML += arr[3].name + arr[3].job + arr[arr.length-1] +'.'+ arr[3].sex + '元'
+
+    //  挺有意思;
+    //  数据生成页面结构;
+
+
+
+    // 可以用forEach么?  试试呗?
+    arr.forEach((e,i) => {
+        
+    });
+    
+
+
+
+
+</script>

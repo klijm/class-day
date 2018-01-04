@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+/*
+        window.navigator.userAgent   浏览器的信息;可以根据这个信息;得到这是个什么浏览器;
+        根据它的信息;  判断这个是移动端还是pc端;
+        它的信息是一个字符串;  +  toLowerCase() 这个方法,全部转小写;
+        一个判断是哪个浏览器的   例子;
+
+        地址栏信息
+            window.location.href
+        查询信息:
+            window.location.search
+            ?到#号之间的信息
+        锚信息:
+            #及之后信息
+        *** onhashchange事件:可以监听hash值的变化,只要hash值改变就会触发这个事件
+        ***改变hash值，页面是不会跳转的。
+        ***改变search值，页面是会跳转的。
+        hash，search都是可读可写的。
+
+        可以根据location.hash  这个特性;做一个页面不跳转的;效果;不用请求整个页面;带来刷新的漫长等待;
+        用户体验好;
+         *** onhashchange事件:
+            可以监听hash值的变化,只要hash值改变就会触发这个事件
+
+
+        **location.search   是会跳转页面的 ;  别搞混了
+
+
+          上滚动距离
+            document.documentElement.scrollTop
+            window.pageYOffset
+
+        左滚动距离:
+            document.documentElement.scrollLeft
+            window.pageXOffset
+
+
+            /*
+        onscroll
+            当滚动条滚动的时候触发这个事件
+
+        window.onscroll = function () {
+            console.log(12324);
+        }
+
+//      onresize:
+//          窗口缩放的时候触发
+//  
+
+//     window.onresize = function () {
+//         console.log('缩放');
+//     }
+
+
+        document.documentElement.scrollTop 能读能写;   **文档上面滚动的距离;
+        window.pageYOffset只能读不能写        ***  窗口滚动的距离;
+
+
+        scrollTo(x,y)   设置点击后,  滚动条应该去的位置;
+
+        window.onscroll = function(){
+            console.log(12324);
+        }
+        在窗口上滚动
+
+
+        document.onclick = function(){
+            // document.documentElement.scrollTop = 0;
+            window.scrollTo(0,0);
+        }
+        在文档点击后,  滚动条应该去的位置;
+        如果给一个固定定位的元素, 点击这个元素也是一样的;
+
+
+
+
+
+**/
+
+
+
+
+</script>
