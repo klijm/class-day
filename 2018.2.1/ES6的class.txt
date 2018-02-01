@@ -1,0 +1,35 @@
+ES6的class???
+class person{}
+上面就是一个类;
+
+使用???
+let P = new person;  实例化对象;
+
+
+****如果类要接收参数??
+在constructor 中接收;
+
+
+
+在ES6中,  属性怎么写?  方法怎么写??
+属性名和属性值一样    就写一个即可;
+
+
+
+
+
+
+ES6 class的  继承???????
+extends  继承!
+在继承的时候,必须在 constructor  写上super() 才能有this;
+
+super()  必须这个样写;
+super()  传的是父级的参数;
+
+用这个   extends  继承!   即继承了属性,也继承了方法;
+ 
+
+
+
+
+
